@@ -36,7 +36,7 @@ Please note that this `README.md`, the `samples/README.md`,
 and a variety of configuration files in this repository (including `.nycrc` and `tsconfig.json`)
 are generated from a central template. To edit one of these files, make an edit
 to its template in this
-[directory](https://github.com/googleanalytics/synthtool/tree/master/synthtool/gcp/templates/node_library).
+[directory](https://github.com/googleapis/synthtool/tree/master/synthtool/gcp/templates/node_library).
 
 ## License
 
