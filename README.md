@@ -1,2 +1,1 @@
-# nodejs-analyticsadmin
-Google Analytics Node.js client library source
+Admin: Nodejs Client
