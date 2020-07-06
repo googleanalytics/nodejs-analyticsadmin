@@ -16,9 +16,40 @@
 // ** https://github.com/googleapis/gapic-generator-typescript **
 // ** All changes to this file may be overwritten. **
 
-import * as v1alpha from './v1alpha';
-const AnalyticsAdminServiceClient = v1alpha.AnalyticsAdminServiceClient;
-export {v1alpha, AnalyticsAdminServiceClient};
-export default {v1alpha, AnalyticsAdminServiceClient};
-import * as protos from '../protos/protos';
-export {protos};
+'use strict';
+
+module.exports = {
+  opts: {
+    readme: './README.md',
+    package: './package.json',
+    template: './node_modules/jsdoc-fresh',
+    recurse: true,
+    verbose: true,
+    destination: './docs/'
+  },
+  plugins: [
+    'plugins/markdown',
+    'jsdoc-region-tag'
+  ],
+  source: {
+    excludePattern: '(^|\\/|\\\\)[._]',
+    include: [
+      'build/src',
+      'protos'
+    ],
+    includePattern: '\\.js$'
+  },
+  templates: {
+    copyright: 'Copyright 2020 Google LLC',
+    includeDate: false,
+    sourceFiles: false,
+    systemName: '@google-analytics/admin',
+    theme: 'lumen',
+    default: {
+      outputSourceFiles: false
+    }
+  },
+  markdown: {
+    idInHeadings: true
+  }
+};
