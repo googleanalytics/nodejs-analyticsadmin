@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-analyticsadmin-samples",
+  "license": "Apache-2.0",
+  "author": "Google LLC.",
+  "engines": {
+    "node": ">=10"
+  },
+  "version": "1.0.0",
+  "description": "A set of samples for the Google Analytics Admin API Node.js client library.",
+  "files": [
+    "*.js"
+  ],
+  "dependencies": {
+    "@google-analytics/admin": "^1.0.0",
+    "google-auth-library": "latest",
+    "google-gax": "latest",
+    "open": "^7.0.4",
+    "server-destroy": "^1.0.1"
+  }
+}
